@@ -9,9 +9,6 @@ const app = express();
 connectDB();
 app.use(express.json());
 
-app.get("/api/notes", (req, res) => {
-  res.send(notes);
-});
 
 // routes
 app.use("/api/users", userRoutes);
